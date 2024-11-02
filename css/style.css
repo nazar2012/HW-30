@@ -1,0 +1,41 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    animation: go-box 4s infinite;
+}
+
+@keyframes go-box {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+
+    25% {
+        top: 100vh;
+        left: 0;
+        background-color: blue;
+        transform: translateY(300px);
+    }
+
+    50% {
+        top: 100vh;
+        left: 100vw;
+        background-color: green;
+        transform: translate(400px, 300px);
+    }
+
+    75% {
+        top: 0;
+        left: 100vw;
+        background-color: yellow;
+        transform: translate(400px, 0);
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+}
